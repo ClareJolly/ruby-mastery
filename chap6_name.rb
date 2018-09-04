@@ -1,3 +1,4 @@
 puts "Hello.  What's your name?"
 name = gets.chomp
-name.downcase[0] == "s" ? (puts name.upcase + "!") : (puts "Hi, " + name)
+return puts "#{name.upcase}!" if name.downcase.chr == "s"
+return puts "Hi, #{name}"
